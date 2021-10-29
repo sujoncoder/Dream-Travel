@@ -23,9 +23,11 @@ const Header = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Link to="/">Home</Link>
-              <Link to="/add/place">add new service </Link>
-              <Link to="/my/orders">My Orders</Link>
-              <Link to="/admin/manage/order">Manage All Orders</Link>
+              {user.email && <Link to="/add/place">add new service </Link>}
+              {user.email && <Link to="/my/orders">My Orders</Link>}
+              {user.email && (
+                <Link to="/admin/manage/order">Manage All Orders</Link>
+              )}
             </Nav>
             {!user.email && (
               <Nav>

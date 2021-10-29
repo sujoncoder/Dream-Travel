@@ -29,6 +29,12 @@ const AddPlace = () => {
           <form onSubmit={handleSubmit(onSubmit)}>
             <input {...register("name")} required placeholder="name" />
             <input {...register("img")} required placeholder="photo URL" />
+            <input
+              {...register("price")}
+              required
+              placeholder="Price"
+              type="number"
+            />
             <input {...register("desc")} required placeholder="description" />
 
             <input type="submit" />

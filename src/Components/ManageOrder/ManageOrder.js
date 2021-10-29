@@ -35,13 +35,13 @@ const ManageOrder = ({ order }) => {
       .then((data) => {
         if (data.modifiedCount > 0) {
           alert("updated");
-          window.location.reload();
+          // window.location.reload();
         }
       });
   };
 
   return (
-    <div style={{ minHeight: "100vh" }}>
+    <div>
       <Col className="place-container animate__animated animate__bounce">
         <Card className="card-container">
           <Card.Img variant="top" style={{ height: "300px" }} src={img} />

@@ -22,6 +22,7 @@ const Order = () => {
     data.tourName = place.name;
     data.status = "pending";
     data.img = place.img;
+    data.desc = place.desc;
 
     fetch("https://frozen-scrubland-07900.herokuapp.com/orders", {
       method: "POST",
@@ -43,8 +44,9 @@ const Order = () => {
   return (
     <div className="form-container animate__bounce">
       <div>
-        <h1>Order {place.name}</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
+          <h1>Order {place.name}</h1>
+          {/* <p className="w-50 mx-auto">{place.desc}</p> */}
           <input
             {...register("tourName")}
             required

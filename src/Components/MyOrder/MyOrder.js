@@ -2,7 +2,8 @@ import React from "react";
 import { Card, Col } from "react-bootstrap";
 import "animate.css";
 const MyOrder = ({ order }) => {
-  const { _id, name, email, phone, address, tourName, status, img } = order;
+  const { _id, name, email, phone, address, tourName, status, img, desc } =
+    order;
   // console.log(order);
   const deleteOrder = (id) => {
     const deleteWarning = window.confirm(
@@ -22,7 +23,7 @@ const MyOrder = ({ order }) => {
     }
   };
   return (
-    <div style={{ minHeight: "100vh" }}>
+    <div>
       <Col className="place-container">
         <Card className="card-container">
           <Card.Img variant="top" src={img} style={{ height: "300px" }} />
@@ -43,6 +44,10 @@ const MyOrder = ({ order }) => {
                 {status}
               </sup>
             </Card.Title>
+            <Card.Text className="text-start">
+              <span>Description: </span> {desc?.slice(0, 200)}
+              {" ......"}
+            </Card.Text>
             <Card.Text className="text-start">Name: {name}</Card.Text>
             <Card.Text className="text-start">Email: {email}</Card.Text>
             <Card.Text className="text-start">Phone: {phone}</Card.Text>
