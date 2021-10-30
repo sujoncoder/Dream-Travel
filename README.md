@@ -12,7 +12,7 @@ Live site [Tour Pedia](https://assignment-11-2abfc.web.app/).
 
 ## if user visit privet Route and this time he is not loged in this website will redirect on the login route
 
-## services item added . `descriptio, name, image, button` are added
+## services item added . `descriptio, name, image, price, button` are added
 
 ## collect order data .
 
