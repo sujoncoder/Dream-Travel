@@ -2,7 +2,8 @@ import React from "react";
 import { Card, Col } from "react-bootstrap";
 import "animate.css";
 const ManageOrder = ({ order }) => {
-  const { _id, tourName, name, email, phone, address, status, img } = order;
+  const { _id, tourName, name, email, phone, address, status, img, price } =
+    order;
 
   const deleteOrder = (id) => {
     const deleteWarning = window.confirm("are yout sure to delete this one ? ");

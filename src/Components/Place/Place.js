@@ -13,6 +13,7 @@ const Place = ({ place }) => {
           <Card.Body>
             <Card.Title>{name}</Card.Title>
             <Card.Text className="text-start">{desc.slice(0, 200)}</Card.Text>
+            <h4 className="text-start">Price: ${price}</h4>
           </Card.Body>
           <div className="d-flex flex-start container mb-2">
             <Link to={`/order/place/tour/${_id}`}>

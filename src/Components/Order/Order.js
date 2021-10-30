@@ -55,7 +55,7 @@ const Order = () => {
                   {place.desc?.slice(0, 400)}
                   {" ..............."}
                 </p>
-                {place.price && <h4>Price: {place.price}</h4>}
+                {place.price && <h4>Price: ${place.price}</h4>}
               </div>
             </div>
           </div>
