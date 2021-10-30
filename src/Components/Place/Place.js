@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "animate.css";
 import "./place.css";
 const Place = ({ place }) => {
-  const { name, desc, img, _id } = place;
+  const { name, desc, img, _id, price } = place;
   return (
     <div>
       <Col className="place-container animate__animated animate__bounce">

@@ -23,8 +23,8 @@ const AddPlace = () => {
   };
   return (
     <div>
-      <div className="form-container">
-        <div>
+      <div className="form-containerr ">
+        <div className="order-containerr">
           <h1>add your Tour Spot</h1>
           <form onSubmit={handleSubmit(onSubmit)}>
             <input {...register("name")} required placeholder="name" />
