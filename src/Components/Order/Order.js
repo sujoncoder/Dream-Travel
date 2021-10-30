@@ -39,6 +39,7 @@ const Order = () => {
         if (data.insertedId) {
           alert("we are collected your tour plan, please wait for approval");
           reset();
+          history.push("/my/orders");
         }
       });
   };

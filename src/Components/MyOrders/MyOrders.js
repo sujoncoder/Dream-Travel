@@ -14,7 +14,7 @@ const MyOrders = () => {
   }, [orders]);
 
   return (
-    <div>
+    <div style={{ minHeight: "100vh" }}>
       <h1>my Orders item {orders.length}</h1>
       <Row xs={1} md={3} className="g-4 container mx-auto">
         {orders.map((order) => (
