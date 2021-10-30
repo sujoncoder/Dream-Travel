@@ -5,10 +5,12 @@ import useAuth from "../Hooks/useAuth";
 import "./HEader.css";
 
 const Header = () => {
+  // collect authentication data
   const { user, logOut } = useAuth();
   const name = user.displayName;
   return (
     <div className="navBar__container">
+      {/* navigation bar  */}
       <Navbar
         collapseOnSelect
         expand="lg"
@@ -16,6 +18,7 @@ const Header = () => {
         variant="dark"
       >
         <Container>
+          {/* navbar left section */}
           <Navbar.Brand as={Link} to="/" style={{ fontSize: "30px" }}>
             TourPedia
           </Navbar.Brand>
@@ -29,6 +32,7 @@ const Header = () => {
                 <Link to="/admin/manage/order">Manage All Orders</Link>
               )}
             </Nav>
+            {/* navbar right part  */}
             {!user.email && (
               <Nav>
                 <Link to="/login">

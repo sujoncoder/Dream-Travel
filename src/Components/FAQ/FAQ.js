@@ -3,9 +3,12 @@ import "animate.css";
 const FAQ = () => {
   return (
     <div className="container mx-auto mt-5 ">
+      {/* FAQ section  */}
       <h4>FAQ</h4>
       <h1>Full range of travel service</h1>
+      {/* faq container  */}
       <div className="row justify-content-between mb-5 align-items-center ">
+        {/* faq questions and ans  */}
         <div className="col-md-5 container mt-5 ">
           <div className="accordion" id="accordionExample ">
             <div className="accordion-item">
@@ -87,6 +90,7 @@ const FAQ = () => {
             </div>
           </div>
         </div>
+        {/* faq image  */}
         <div className="col-md-7 mt-5 ">
           <img
             src="https://i.ibb.co/P5s5mkF/xabout2-png-pagespeed-ic-FKuxbsbrr-T.webp"

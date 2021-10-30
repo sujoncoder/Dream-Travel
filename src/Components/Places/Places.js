@@ -6,6 +6,7 @@ import Place from "../Place/Place";
 
 const Places = () => {
   const [places, setPlaces] = useState([]);
+  // fetching for api
   useEffect(() => {
     fetch("https://frozen-scrubland-07900.herokuapp.com/places")
       .then((res) => res.json())
@@ -13,6 +14,7 @@ const Places = () => {
   }, []);
   return (
     <div>
+      {/* checking length  */}
       {places.length ? (
         <Row xs={1} md={3} className="g-4 container mx-auto">
           {places.map((place) => (
@@ -20,6 +22,7 @@ const Places = () => {
           ))}
         </Row>
       ) : (
+        // if data not loaded the spinner will shown
         <Spinner className="mt-5" animation="grow" />
       )}
     </div>

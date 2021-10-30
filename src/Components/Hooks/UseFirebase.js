@@ -14,7 +14,7 @@ const UseFirebase = () => {
   const [user, setUser] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const auth = getAuth();
-
+  // google authentication method
   const googleSignIn = () => {
     setIsLoading(true);
     signInWithPopup(auth, googleProvider)
@@ -44,6 +44,7 @@ const UseFirebase = () => {
         setIsLoading(false);
       });
   };
+  // for supply authentication  above place
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -56,6 +57,7 @@ const UseFirebase = () => {
 
     return () => unsubscribe;
   }, []);
+  // retutn authentication methods and veriable
   return {
     user,
     googleSignIn,

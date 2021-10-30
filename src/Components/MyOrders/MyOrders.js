@@ -5,8 +5,10 @@ import MyOrder from "../MyOrder/MyOrder";
 
 const MyOrders = () => {
   const { user } = useAuth();
+  // fetching url
   const url = `https://frozen-scrubland-07900.herokuapp.com/orders/${user.email}`;
   const [orders, setOrders] = useState([]);
+  // fetching api method
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -16,6 +18,7 @@ const MyOrders = () => {
   return (
     <div style={{ minHeight: "100vh" }}>
       <h1>my Orders item {orders.length}</h1>
+      {/* mapping my orders  */}
       <Row xs={1} md={3} className="g-4 container mx-auto">
         {orders.map((order) => (
           <MyOrder key={order._id} order={order}></MyOrder>

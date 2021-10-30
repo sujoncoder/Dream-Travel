@@ -7,9 +7,13 @@ import Places from "../Places/Places";
 const Home = () => {
   return (
     <div>
+      {/* intro section or banner section  */}
       <IntroSection></IntroSection>
+      {/* places Route  */}
       <Places></Places>
+      {/* offering route  */}
       <Offer></Offer>
+      {/* questions FAQ route  */}
       <FAQ></FAQ>
     </div>
   );

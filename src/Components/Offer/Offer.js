@@ -2,6 +2,7 @@ import React from "react";
 import "./Offer.css";
 const Offer = () => {
   return (
+    // offer container
     <div className="offer-container">
       <div
         className="row"
@@ -12,6 +13,7 @@ const Offer = () => {
           width: "90%",
         }}
       >
+        {/* offer content  */}
         <div className="col-md-6 offer-content ">
           <div>
             <h1>TAKE A ROAD TRIP WITH THE tourpedia</h1>
@@ -25,6 +27,7 @@ const Offer = () => {
             </button>
           </div>
         </div>
+        {/* offer right side part  */}
         <div className="col-md-6"></div>
       </div>
     </div>
