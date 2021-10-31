@@ -92,7 +92,7 @@ const FAQ = () => {
         </div>
         {/* faq image  */}
         <div className="col-md-7 mt-5 ">
-          <img
+          <img className="img-fluid"
             src="https://i.ibb.co/P5s5mkF/xabout2-png-pagespeed-ic-FKuxbsbrr-T.webp"
             alt=""
           />
