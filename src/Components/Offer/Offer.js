@@ -16,7 +16,7 @@ const Offer = () => {
         {/* offer content  */}
         <div className="col-md-6 offer-content ">
           <div>
-            <h1>TAKE A ROAD TRIP WITH THE tourpedia</h1>
+            <h1>TAKE A ROAD TRIP WITH THE <span style={{color:'pink'}}>DREAM TRAVEL</span> ‌‌</h1>
             <p>
               Travel is the perfect way to meet new friends and try something
               new. Join Emma, Simon, Anthony and Lachy as they jump in the Big

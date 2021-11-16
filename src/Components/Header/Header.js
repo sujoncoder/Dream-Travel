@@ -20,7 +20,7 @@ const Header = () => {
         <Container>
           {/* navbar left section */}
           <Navbar.Brand as={Link} to="/" style={{ fontSize: "30px" }}>
-            TourPedia
+          <h3>Dream Travel</h3>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

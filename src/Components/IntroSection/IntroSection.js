@@ -8,7 +8,7 @@ const IntroSection = () => {
         <div>
           <div>
             {/* intro message */}
-            <h1>welcome our TourPedia organizetion</h1>
+            <h1>welcome our DREAM TRAVEL‌ organizetion</h1>
             <h4>hi we have provide best bervices in bangladesh</h4>
             {/* button for more vetails  */}
             <button className="btn btn-success">
